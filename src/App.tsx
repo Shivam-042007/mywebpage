@@ -13,10 +13,8 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter basename="/mywebpage">  
-  <App />
-</BrowserRouter>
-      <BrowserRouter>
+      {/* ONE Router with the basename, wrapping your Routes */}
+      <BrowserRouter basename="/mywebpage">
         <Routes>
           <Route path="/" element={<Index />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
